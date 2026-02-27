@@ -14,12 +14,18 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="com.github.Stelios-Kourlis.MoveableUI">
-      <HintPath>A:\Home\Game Related\PEAK\MoveableUI\artifacts\bin\MoveableUI\release\com.github.Stelios-Kourlis.MoveableUI.dll</HintPath>
+      <HintPath>..\..\..\MoveableUI\artifacts\bin\MoveableUI\release\com.github.Stelios-Kourlis.MoveableUI.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="com.github.Stelios-Kourlis.RunTracker">
+      <HintPath>..\..\..\RunTracker\artifacts\bin\RunTracker\release\com.github.Stelios-Kourlis.RunTracker.dll</HintPath>
       <Private>true</Private>
     </Reference>
   </ItemGroup>
   <!-- Embed the DLL into final mod assembly -->
   <Target Name="ILMergeAssemblies" AfterTargets="Build">
-    <Exec Command="ilrepack /target:library /allowdup /lib:&quot;A:\Steam\steamapps\common\PEAK\BepInEx\core&quot; /out:&quot;A:\Home\Game Related\PEAK\RopeTracker\artifacts\bin\RopeTracker\release\com.github.Stelios-Kourlis.RopeTracker.dll&quot; &quot;A:\Home\Game Related\PEAK\RopeTracker\artifacts\bin\RopeTracker\release\com.github.Stelios-Kourlis.RopeTracker.dll&quot; &quot;A:\Home\Game Related\PEAK\RopeTracker\artifacts\bin\RopeTracker\release\com.github.Stelios-Kourlis.MoveableUI.dll&quot;" />
+    <Exec Command="ilrepack /target:library /allowdup /lib:A:\Steam\steamapps\common\PEAK\BepInEx\core /out:&quot;$(OutputPath)com.github.Stelios-Kourlis.RopeTracker.dll&quot; &quot;$(TargetPath)&quot; &quot;$(OutputPath)com.github.Stelios-Kourlis.MoveableUI.dll&quot; &quot;$(OutputPath)com.github.Stelios-Kourlis.RunTracker.dll&quot;" />
   </Target>
 </Project>

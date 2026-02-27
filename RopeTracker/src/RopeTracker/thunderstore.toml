@@ -6,7 +6,7 @@ repository = "https://thunderstore.io"
 
 [package]
 namespace = "kstelakis"
-name = "RopeTracker"
+name = "Rope_Tracker"
 description = "A small mod that tracks the total length of rope used in the game. Useful for the Knot Tying Badge"
 websiteUrl = "https://github.com/Stelios-Kourlis/RopeTracker"
 containsNsfwContent = false

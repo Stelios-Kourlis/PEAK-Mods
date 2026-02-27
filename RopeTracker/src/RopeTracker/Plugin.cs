@@ -6,6 +6,7 @@ using PEAKLib.UI;
 using PEAKLib.UI.Elements;
 using UnityEngine;
 using MoveableUI;
+using RunTracker;
 
 namespace RopeTracker;
 
@@ -47,6 +48,9 @@ public partial class Plugin : BaseUnityPlugin
             new Vector2(0, 525),
             "Stored text position (RectTransform.localPosition)"
         );
+
+        RunTracker.Plugin.isInAirport += DestroyUI;
+        RunTracker.Plugin.isInIsland += SpawnUI;
 
         Log.LogInfo($"Plugin {Name} is loaded!");
     }
