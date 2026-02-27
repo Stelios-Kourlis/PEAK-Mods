@@ -33,6 +33,9 @@ public partial class Plugin : BaseUnityPlugin
             "Stored text position (RectTransform.localPosition)"
         );
 
+        RunTracker.Plugin.isInAirport += SpawnUI;
+        RunTracker.Plugin.isInIsland += DestroyUI;
+
         Log.LogInfo($"Plugin {Name} is loaded!");
     }
 
@@ -106,7 +109,7 @@ public partial class Plugin : BaseUnityPlugin
 
     public static void SpawnUI()
     {
-        _closestScoutDistance = MenuAPI.CreateText($"{_closestScoutDistance}m/100m", "RopeLengthCounterText")
+        _closestScoutDistance = MenuAPI.CreateText($"Loading...", "ScoutmasterStatusText")
                                 .SetFontSize(24f)
                                 .SetColor(new Color(0.8742f, 0.8567f, 0.7615f, 1));
         Canvas canvas = FindFirstObjectByType<GUIManager>().transform.Find("Canvas_HUD").GetComponent<Canvas>();
