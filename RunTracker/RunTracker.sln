@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E21540B9-BCC8-4378-8DE4-10B2282BFB3F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunTracker", "src\RunTracker\RunTracker.csproj", "{B3E69790-E0E0-4B7B-B6CE-65388C382EE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3E69790-E0E0-4B7B-B6CE-65388C382EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E69790-E0E0-4B7B-B6CE-65388C382EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E69790-E0E0-4B7B-B6CE-65388C382EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E69790-E0E0-4B7B-B6CE-65388C382EE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3E69790-E0E0-4B7B-B6CE-65388C382EE6} = {E21540B9-BCC8-4378-8DE4-10B2282BFB3F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92F6D475-68F0-44D6-A1AF-A28F5948E381}
+	EndGlobalSection
+EndGlobal
