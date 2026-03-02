@@ -136,7 +136,7 @@ public partial class Plugin : BaseUnityPlugin
     public static void SpawnUI()
     {
         if (_scoutmasterStatus != null) return; //Already spawned
-        Log.LogInfo($"IsTheScoutmasterClose: Spawning UI");
+        Log.LogInfo($"Spawning UI");
         _scoutmasterStatus = MenuAPI.CreateText($"Loading...", "ScoutmasterStatusText")
                                 .SetFontSize(24f)
                                 .SetColor(new Color(0.8742f, 0.8567f, 0.7615f, 1));
@@ -158,7 +158,7 @@ public partial class Plugin : BaseUnityPlugin
 
     public static void DestroyUI()
     {
-        Log.LogInfo($"IsTheScoutmasterClose: Destroying UI");
+        Log.LogInfo($"Destroying UI");
         if (_scoutmasterStatus != null) Destroy(_scoutmasterStatus.gameObject);
         _scoutmasterStatus = null!;
     }
