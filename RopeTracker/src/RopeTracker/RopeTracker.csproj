@@ -26,6 +26,6 @@
   </ItemGroup>
   <!-- Embed the DLL into final mod assembly -->
   <Target Name="ILMergeAssemblies" AfterTargets="Build">
-    <Exec Command="ilrepack /target:library /allowdup /lib:A:\Steam\steamapps\common\PEAK\BepInEx\core /out:&quot;$(OutputPath)com.github.Stelios-Kourlis.RopeTracker.dll&quot; &quot;$(TargetPath)&quot; &quot;$(OutputPath)com.github.Stelios-Kourlis.MoveableUI.dll&quot; &quot;$(OutputPath)com.github.Stelios-Kourlis.RunTracker.dll&quot;" />
+    <Exec Command="ilrepack /target:library /allowdup /lib:S:\Steam\steamapps\common\PEAK\BepInEx\core /out:&quot;$(OutputPath)com.github.Stelios-Kourlis.RopeTracker.dll&quot; &quot;$(TargetPath)&quot; &quot;$(OutputPath)com.github.Stelios-Kourlis.MoveableUI.dll&quot; &quot;$(OutputPath)com.github.Stelios-Kourlis.RunTracker.dll&quot;" />
   </Target>
 </Project>
